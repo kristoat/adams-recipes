@@ -8,7 +8,7 @@ type PropsType = {
 };
 
 const RecipeList = (props: PropsType) => (
-  <ul className="lul">
+  <ul className="recipe-list">
     {props.recipes.map(recipe => (
       <li>{recipe}</li>
     ))}
