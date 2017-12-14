@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import logo from './logo.png';
 import './App.css';
 
+import MyRecipes from './pages/MyRecipes.js';
+
 class App extends Component {
   render() {
     return (
@@ -12,7 +14,7 @@ class App extends Component {
           <h1 className="App-title">Velkommen til Adam's <s>matkasse</s> oppskrifter</h1>
         </header>
         <p className="App-intro">
-
+          <MyRecipes />
         </p>
       </div>
     );

@@ -1,15 +1,16 @@
 .App {
-    text-align: center;
     font: small-caps bold 24px/1 sans-serif;
 }
 
 .App-logo {
+    text-align: center;
     animation: App-logo-spin infinite 2s linear;
     height: 80px;
     transform-origin: 50% 50%;
 }
 
 .App-header {
+    text-align: center;
     background-color: white;
     height: 150px;
     padding: 20px;
