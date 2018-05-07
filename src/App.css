@@ -34,4 +34,10 @@
     }
 }
 
+.divider {
+    margin: 22px;
+    color: grey;
+    border-bottom: 1px solid;
+}
+
 

@@ -1,3 +1,8 @@
 .recipe-list {
-    color: hotpink;
+    color: black
+;
+}
+
+.recipe-item {
+    cursor: pointer;
 }

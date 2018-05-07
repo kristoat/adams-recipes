@@ -1,22 +1,47 @@
 import React from 'react';
-import { BrowserRouter } from 'react-router-dom'
-import logo from './logo.png';
+import {
+  HashRouter,
+  Switch,
+  Route,
+  Link
+} from 'react-router-dom'
 import './App.css';
-
+import logo from './logo.png';
 import MyRecipes from './pages/MyRecipes.js';
+import Home from './pages/Home.js';
+
+const Header = () => (
+  <div className="App">
+    <header className="App-header">
+      <Link to='/' >
+        <img src={logo} className="App-logo" alt="hjem"/>
+      </Link>
+      <nav>
+        <ul>
+          <li><Link to='/'>Hjem</Link></li>
+          <li><Link to='/oppskrifter'>Oppskrifter</Link></li>
+        </ul>
+      </nav>
+    </header>
+  </div>
+);
+
+const Main = () => (
+  <main>
+    <Switch>
+      <Route exact path='/' component={Home} />
+      <Route path='/oppskrifter' component={MyRecipes} />
+    </Switch>
+  </main>
+);
 
 const App = () => (
-  <BrowserRouter>
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <h1 className="App-title">Velkommen til Adam's <s>matkasse</s> oppskrifter</h1>
-      </header>
-      <p className="App-intro">
-        <MyRecipes />
-      </p>
+  <HashRouter>
+    <div>
+      <Header />
+      <Main />
     </div>
-  </BrowserRouter>
+  </HashRouter>
 );
 
 export default App;

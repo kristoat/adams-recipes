@@ -6,9 +6,9 @@ const MyRecipes = (props) => (
     <h1>Oppskrifter</h1>
     <RecipeList
       recipes={[
-        'Recipe 1',
-        'Recipe 2',
-        'Recipe 3',
+        'Burger',
+        'Pizza',
+        'Taco',
       ]}
     />
   </div>
